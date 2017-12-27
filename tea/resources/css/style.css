@@ -1,4 +1,9 @@
-*{
+html, body{
+    margin:0px;
+    padding:0px;
+}
+
+body, a{
   background-color: black;
   font-family: Helvetica;
   color: seashell;
@@ -6,16 +11,32 @@
   opacity: .9;
 }
 
+/*Text styles*/
+
 h2{
   font-size: 32px;
+}
+
+h3{
+  font-size: 28px;
+}
+
+h4{
+  font-size: 22px;
+}
+
+h5{
+  font-size: 18px;
+}
+
+p{
+  padding-bottom: 20px;
 }
 
 /*Top Navigation*/
 
 header{
-  display: flex;
   align-items: center;
-  justify-content: center;
   background-color: black;
   height: 69px;
   width: 100%;
@@ -23,6 +44,11 @@ header{
   border-bottom: 1px solid white;
   z-index: 5;
 }
+
+ nav{
+   text-align: right;
+   flex-grow: 1;
+ }
 
 .logo{
   height: 50px;
@@ -32,4 +58,89 @@ header{
 .link{
   padding-right: 32px;
   text-decoration: underline;
+}
+
+/*Page content*/
+
+.content{
+  width: 1200px;
+  margin: auto;
+  opacity: .9;
+  padding-top: 69px;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Mission section hero image*/
+
+.hero{
+  height: 700px;
+  background-image: url("../images/img-mission-background.jpg");
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.headline{
+  text-align: center;
+  width: 100%
+}
+
+/*headline text style with a black background*/
+#black{
+  background-color: black;
+}
+
+/*Section with a unique width*/
+
+#featured{
+  width: 1000px;
+  margin: auto;
+  padding-top: 64px;
+}
+
+.item{
+  text-align: center;
+  margin: 0 16px;
+}
+
+.item h4{
+  margin-top: 10px;
+}
+
+.item img{
+  width: 300px;
+  height: 200px;
+}
+
+/*Location section*/
+
+.locations{
+  background-image: url("../images/img-locations-background.jpg");
+  height: 500px;
+  align-items: center;
+  padding-top: 64px;
+}
+
+/*Store addresses*/
+
+.store{
+  background-color: black;
+  margin: 0 20px;
+  width: 300px;
+  text-align: center;
+  opacity:1;
+}
+
+.contact{
+  text-align: center;
+  height: 200px;
+}
+
+footer{
+  margin-left: 20px;
 }
