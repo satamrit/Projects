@@ -1,0 +1,35 @@
+*{
+  background-color: black;
+  font-family: Helvetica;
+  color: seashell;
+  font-size: 22px;
+  opacity: .9;
+}
+
+h2{
+  font-size: 32px;
+}
+
+/*Top Navigation*/
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 69px;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid white;
+  z-index: 5;
+}
+
+.logo{
+  height: 50px;
+  margin-left: 10px;
+}
+
+.link{
+  padding-right: 32px;
+  text-decoration: underline;
+}
